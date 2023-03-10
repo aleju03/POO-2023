@@ -2,9 +2,11 @@ import java.util.LinkedList;
 
 public class Agenda{
     private LinkedList<Contacto> contactos;
+    private LinkedList<Evento> eventos;
 
     public Agenda(){
         contactos = new LinkedList<>();
+        eventos = new LinkedList<>();
     }
 
     public void agregarContacto(Contacto c){
@@ -21,4 +23,17 @@ public class Agenda{
         }
     }
 
+    public void agregarEvento(Evento e){
+        eventos.add(e);
+    }
+
+    public void eliminarEvento(Evento e){
+        eventos.remove(e);
+    }
+
+    public void listarEventos(){
+        for (Evento e : eventos){
+            System.out.println(e);
+        }
+    }
 }
