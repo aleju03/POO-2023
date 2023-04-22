@@ -28,5 +28,8 @@ public class Main {
         //Imprimir eventos
         System.out.println("\nEVENTOS:");
         agenda1.listarEventos();
+
+        //Mostrar la interfaz gráfica
+        
     }
 }
