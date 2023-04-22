@@ -81,6 +81,5 @@ public class AgendaGUI {
         //FIN BOTONES
 
         frame.setLocationRelativeTo(null);
-        frame.setVisible(true);
     }
 }
