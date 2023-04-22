@@ -1,4 +1,6 @@
-public class Contacto{
+package Clases;
+
+public abstract class Contacto{
    private String nombre;
    private String telefono;
 

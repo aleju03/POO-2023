@@ -1,3 +1,5 @@
+package Clases;
+
 public class ContactoProfesional extends Contacto{
     private String nombreEmpresa;
     private String puesto;

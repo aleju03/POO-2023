@@ -1,3 +1,5 @@
+package Clases;
+
 public class ContactoFamiliar extends Contacto{
     private String parentesco;
 

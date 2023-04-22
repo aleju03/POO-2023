@@ -1,3 +1,5 @@
+package Clases;
+
 public class EventoProfesional extends Evento {
     private String organizacion;
 

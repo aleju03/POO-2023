@@ -1,3 +1,5 @@
+package Clases;
+
 public class EventoSocial extends Evento {
     private String tipo;
 

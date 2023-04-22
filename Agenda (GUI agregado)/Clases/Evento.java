@@ -1,3 +1,5 @@
+package Clases;
+
 public class Evento {
     private String nombre;
     private String fecha;

@@ -1,3 +1,11 @@
+package Clases;
+import GUI.AgendaGUI;
+
+import javax.swing.SwingUtilities;
+import javax.swing.UIManager;
+import javax.swing.UnsupportedLookAndFeelException;
+
+
 public class Main {
     public static void main(String[] args) {
         //contactos
@@ -16,7 +24,7 @@ public class Main {
         agenda1.agregarEvento(e1);
         agenda1.agregarEvento(e2);
 
-        //Imprimir contactos
+        /*//Imprimir contactos
         System.out.println("\nCONTACTOS:");
         agenda1.listarContactos();
 
@@ -27,9 +35,17 @@ public class Main {
 
         //Imprimir eventos
         System.out.println("\nEVENTOS:");
-        agenda1.listarEventos();
+        agenda1.listarEventos();*/
 
-        //Mostrar la interfaz gráfica
-        
+        //Mostrar interfaz gráfica
+        try { //cambiar la apariencia de la interfaz gráfica a la de Windows
+            UIManager.setLookAndFeel(UIManager.getSystemLookAndFeelClassName()); //Esto no es necesario pero me gusta más el estilo de interfaz Windows que el de Java
+        } catch (ClassNotFoundException | InstantiationException | IllegalAccessException | UnsupportedLookAndFeelException e) {
+            e.printStackTrace();
+        }        
+        SwingUtilities.invokeLater(() -> {
+            AgendaGUI agendaGUI = new AgendaGUI(agenda1);
+            agendaGUI.setVisible(true);
+        });
     }
 }

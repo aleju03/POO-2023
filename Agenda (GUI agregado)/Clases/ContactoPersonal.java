@@ -1,3 +1,5 @@
+package Clases;
+
 public class ContactoPersonal extends Contacto{
     private String direccion;
     private String email;
