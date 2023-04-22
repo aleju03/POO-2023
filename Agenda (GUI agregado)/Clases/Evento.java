@@ -1,6 +1,6 @@
 package Clases;
 
-public class Evento {
+public abstract class Evento {
     private String nombre;
     private String fecha;
     private String lugar;
