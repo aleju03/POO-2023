@@ -23,7 +23,7 @@ Además, se incluye un GUI simple para interactuar con la calculadora:
 
 Se ingresa la expresión matemática en el campo de texto de la GUI y se presiona el botón "Calcular" para evaluar la expresión. La calculadora maneja errores en la entrada, como caracteres inválidos, y errores de evaluación, como la división por cero o una expresión incompleta.
 
-El botón "Calcular" solo se activa cuando hay una expresión válida en el campo de texto.
+El botón "Calcular" solo se activa cuando el campo de texto no está vacío.
 
 ## Excepciones
 
